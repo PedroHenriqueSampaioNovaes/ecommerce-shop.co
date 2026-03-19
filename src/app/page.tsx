@@ -1,3 +1,5 @@
-export default function Home() {
-  return <h1 className="font-highlight">Home</h1>;
+import Home from '@/components/Home';
+
+export default function HomePage() {
+  return <Home />;
 }

@@ -1,0 +1,211 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "t-shirt",
+      "name": "Gradient Graphic T-shirt",
+      "images": ["/products-mock/product2.png"],
+      "color": { "name": "white", "hex": "#fff" },
+      "rating": 5,
+      "price": 10999,
+      "discount": 0,
+      "sales": 20,
+      "created_at": "2026-03-9T16:28:25.887Z"
+    },
+    {
+      "id": 2,
+      "category": "shirt",
+      "name": "Polo with Tipping Details",
+      "images": ["/products-mock/product3.png"],
+      "color": { "name": "brown", "hex": "#894b29" },
+      "rating": 4.5,
+      "price": 4999,
+      "discount": 0.2,
+      "sales": 7,
+      "created_at": "2026-03-7T16:28:25.887Z"
+    },
+    {
+      "id": 3,
+      "category": "t-shirt",
+      "name": "Gradient Graphic T-shirt",
+      "images": ["/products-mock/product1.png"],
+      "color": { "name": "black", "hex": "#000" },
+      "rating": 3.5,
+      "price": 6500,
+      "discount": 0,
+      "sales": 13,
+      "created_at": "2026-03-13T16:28:25.887Z"
+    },
+    {
+      "id": 4,
+      "category": "t-shirt",
+      "name": "Sleeve Striped T-SHIRT",
+      "images": ["/products-mock/product4.png"],
+      "color": { "name": "orange", "hex": "#FF6400" },
+      "rating": 3,
+      "price": 1999,
+      "discount": 0.35,
+      "sales": 2,
+      "created_at": "2026-03-12T16:28:25.887Z"
+    },
+    {
+      "id": 5,
+      "category": "shorts",
+      "name": "Loose Fit Bermuda Shorts",
+      "images": ["/products-mock/product5.png"],
+      "color": { "name": "gray", "hex": "#898989" },
+      "rating": 4,
+      "price": 8000,
+      "discount": 0.05,
+      "sales": 18,
+      "created_at": "2026-03-15T16:28:25.887Z"
+    },
+    {
+      "id": 6,
+      "category": "jeans",
+      "name": "Skinny Fit Jeans",
+      "images": ["/products-mock/product6.png"],
+      "color": { "name": "gray", "hex": "#898989" },
+      "rating": 4,
+      "price": 24000,
+      "discount": 0.4,
+      "sales": 9,
+      "created_at": "2026-03-14T16:28:25.887Z"
+    },
+    {
+      "id": 7,
+      "category": "t-shirt",
+      "name": "Black Striped T-shirt",
+      "images": ["/products-mock/product7.png"],
+      "color": { "name": "white", "hex": "#fff" },
+      "rating": 4,
+      "price": 9000,
+      "discount": 0,
+      "sales": 3,
+      "created_at": "2026-03-17T16:28:25.887Z"
+    },
+    {
+      "id": 8,
+      "category": "shirt",
+      "name": "Vertical Striped Shirt",
+      "images": ["/products-mock/product8.png"],
+      "color": { "name": "green", "hex": "#65B307" },
+      "rating": 4.5,
+      "price": 2999,
+      "discount": 0,
+      "sales": 2,
+      "created_at": "2026-03-18T16:28:25.887Z"
+    },
+    {
+      "id": 9,
+      "category": "t-shirt",
+      "name": "Courage Graphic T-shirt",
+      "images": ["/products-mock/product9.png"],
+      "color": { "name": "orange", "hex": "#FF6400" },
+      "rating": 4.5,
+      "price": 4999,
+      "discount": 0.1,
+      "sales": 11,
+      "created_at": "2026-03-11T12:28:25.887Z"
+    },
+    {
+      "id": 10,
+      "category": "t-shirt",
+      "name": "Premium Plain T-shirt",
+      "images": ["/products-mock/product10.png"],
+      "color": { "name": "black", "hex": "#000" },
+      "rating": 5,
+      "price": 11999,
+      "discount": 0.15,
+      "sales": 12,
+      "created_at": "2026-03-11T20:28:25.887Z"
+    },
+    {
+      "id": 11,
+      "category": "shorts",
+      "name": "Topper Shorts",
+      "images": ["/products-mock/product11.png"],
+      "color": { "name": "blue indigo", "hex": "#0A3876" },
+      "rating": 5,
+      "price": 2499,
+      "discount": 0,
+      "sales": 18,
+      "created_at": "2026-03-4T16:28:25.887Z"
+    },
+    {
+      "id": 12,
+      "category": "jeans",
+      "name": "Skinny Malwee Jeans",
+      "images": ["/products-mock/product12.png"],
+      "color": { "name": "gray", "hex": "#898989" },
+      "rating": 4,
+      "price": 9999,
+      "discount": 0.5,
+      "sales": 2,
+      "created_at": "2026-03-14T13:28:25.887Z"
+    },
+    {
+      "id": 13,
+      "category": "jeans",
+      "name": "New Speed Raw Jeans",
+      "images": ["/products-mock/product13.png"],
+      "color": { "name": "gray", "hex": "#898989" },
+      "rating": 4.5,
+      "price": 13000,
+      "discount": 0,
+      "sales": 14,
+      "created_at": "2026-03-15T09:28:25.887Z"
+    },
+    {
+      "id": 14,
+      "category": "shirt",
+      "name": "Social Premium",
+      "images": ["/products-mock/product14.png"],
+      "color": { "name": "black", "hex": "#000" },
+      "rating": 5,
+      "price": 19999,
+      "discount": 0.1,
+      "sales": 16,
+      "created_at": "2026-03-17T22:28:25.887Z"
+    },
+    {
+      "id": 15,
+      "category": "shirt",
+      "name": "Social Slim Luxury",
+      "images": ["/products-mock/product15.png"],
+      "color": { "name": "white", "hex": "#fff" },
+      "rating": 5,
+      "price": 20999,
+      "discount": 0.15,
+      "sales": 19,
+      "created_at": "2026-03-16T23:28:25.887Z"
+    },
+    {
+      "id": 16,
+      "category": "shorts",
+      "name": "Dry Fit Side Lupus",
+      "images": ["/products-mock/product16.png"],
+      "color": { "name": "black", "hex": "#000" },
+      "rating": 4,
+      "price": 1999,
+      "discount": 0,
+      "sales": 7,
+      "created_at": "2026-03-02T08:28:25.887Z"
+    }
+  ],
+  "colors": [
+    { "name": "white", "hex": "#fff" },
+    { "name": "black", "hex": "#000" },
+    { "name": "orange", "hex": "#FF6400" },
+    { "name": "brown", "hex": "#894b29" },
+    { "name": "gray", "hex": "#898989" },
+    { "name": "green", "hex": "#65B307" },
+    { "name": "blue indigo", "hex": "#0A3876" }
+  ],
+  "categories": [
+    { "category": "t-shirt" },
+    { "category": "shirt" },
+    { "category": "jeans" },
+    { "category": "shorts" }
+  ]
+}

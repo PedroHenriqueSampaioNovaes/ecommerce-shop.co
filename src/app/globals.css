@@ -1,9 +1,63 @@
+@layer theme, base, mui, components, utilities;
 @import 'tailwindcss';
 
 @theme inline {
-  --font-primary: var(--font-satoshi), sans-serif;
-  --font-highlight: var(--font-integralcf), sans-serif;
+  --font-title: var(--font-integralcf), sans-serif;
+  --font-body: var(--font-satoshi), sans-serif;
 }
 
 @theme {
+  --color-back-200: #f2f0f1;
+  --color-back-300: #f0f0f0;
+  --color-alert: #ff3333;
+
+  --radius-7.75xl: 3.875rem;
+  --radius-2.5xl: 1.25rem;
+
+  --breakpoint-xl: 77.5rem;
+  --breakpoint-2xl: initial;
+}
+
+@layer components {
+  .cta {
+    @apply inline-flex items-center justify-center rounded-7.75xl bg-black py-4 px-7 text-base text-white font-body font-medium;
+  }
+
+  .icon-lower-opacity {
+    @apply text-black/40;
+  }
+
+  .discount {
+    @apply text-alert bg-alert/10 flex items-center rounded-full py-1.5 px-3.5;
+  }
+
+  .oldPrice {
+    @apply font-bold text-2xl text-black/40 line-through;
+  }
+}
+
+@utility container {
+  @apply mx-auto px-4;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title font-bold text-black;
+  }
+
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.hero-bg {
+  background-color: #f2f0f1;
 }
