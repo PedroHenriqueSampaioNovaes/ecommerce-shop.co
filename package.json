@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run dev\"",
+    "dev": "concurrently \"npm run server\" \"next dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "server": "npx json-server db.json -p 3333",
-    "vercel-build": "concurrently \"npm run server\" \"npm run dev\""
+    "server": "npx json-server db.json -p 8080",
+    "vercel-build": "concurrently \"npm run server\" \"npm run build\""
   },
   "dependencies": {
     "@emotion/styled": "^11.14.1",
