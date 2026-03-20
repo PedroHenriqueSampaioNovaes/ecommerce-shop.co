@@ -7,6 +7,7 @@ import {
   SetStateAction,
   useCallback,
   useContext,
+  useEffect,
   useState,
 } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
@@ -23,6 +24,8 @@ interface FilterContext {
   filter: FilterState;
   setFilter: Dispatch<SetStateAction<FilterState>>;
   filterConfig: FilterConfig;
+  showFilter: boolean;
+  setShowFilter: Dispatch<SetStateAction<boolean>>;
 }
 
 const FilterProductsContext = createContext({} as FilterContext);
@@ -35,7 +38,8 @@ export function useFilterProducts() {
     );
   }
 
-  const { filter, setFilter, filterConfig } = context;
+  const { filter, setFilter, filterConfig, showFilter, setShowFilter } =
+    context;
 
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -58,7 +62,14 @@ export function useFilterProducts() {
     replace(`${pathname}?${params.toString()}`, { scroll: false });
   }, [filter, pathname, replace, searchParams]);
 
-  return { filter, setFilter, applyFilter, filterConfig };
+  return {
+    filter,
+    setFilter,
+    applyFilter,
+    filterConfig,
+    showFilter,
+    setShowFilter,
+  };
 }
 
 interface FilterContextProvider {
@@ -81,9 +92,12 @@ export function FilterProductsContextProvider({
   };
 
   const [filter, setFilter] = useState(filterData);
+  const [showFilter, setShowFilter] = useState(false);
 
   return (
-    <FilterProductsContext value={{ filterConfig, filter, setFilter }}>
+    <FilterProductsContext
+      value={{ filterConfig, filter, setFilter, showFilter, setShowFilter }}
+    >
       {children}
     </FilterProductsContext>
   );

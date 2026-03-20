@@ -14,7 +14,7 @@ interface ProductProps {
 
 export default function ProductItem({ product }: ProductProps) {
   return (
-    <div className='flex flex-col'>
+    <div className="flex flex-col">
       <ShowcaseProduct
         id={product.id}
         name={product.name}
@@ -23,7 +23,8 @@ export default function ProductItem({ product }: ProductProps) {
 
       <Link
         href={`/products/${product.name}-${product.id}`}
-        className="block font-bold text-xl mt-4 capitalize"
+        className="font-bold text-base md:text-xl mt-4 capitalize whitespace-nowrap text-ellipsis overflow-clip"
+        title={product.name}
       >
         {product.name}
       </Link>

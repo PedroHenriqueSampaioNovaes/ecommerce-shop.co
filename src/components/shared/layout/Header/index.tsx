@@ -39,7 +39,7 @@ export default function Header() {
         <SearchField />
 
         <div className="flex items-center gap-3">
-          <IconButton className="lg:hidden cursor-pointer">
+          <IconButton className="lg:hidden cursor-pointer text-black">
             <Search />
           </IconButton>
           <Cart />

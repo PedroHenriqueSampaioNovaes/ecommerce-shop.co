@@ -14,6 +14,7 @@
   --radius-7.75xl: 3.875rem;
   --radius-2.5xl: 1.25rem;
 
+  --breakpoint-xs: 32.5rem;
   --breakpoint-xl: 77.5rem;
   --breakpoint-2xl: initial;
 }
@@ -28,11 +29,11 @@
   }
 
   .discount {
-    @apply text-alert bg-alert/10 flex items-center rounded-full py-1.5 px-3.5;
+    @apply text-alert max-sm:text-[0.625rem] bg-alert/10 flex items-center rounded-full py-1 md:py-1.5 px-2 md:px-3.5;
   }
 
   .oldPrice {
-    @apply font-bold text-2xl text-black/40 line-through;
+    @apply font-bold text-sm sm:text-2xl text-black/40 line-through;
   }
 }
 

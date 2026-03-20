@@ -11,8 +11,8 @@ export default function PriceProduct({ price, discount }: PriceProductProps) {
   const priceFormatted = formatCurrency(price);
 
   return (
-    <div className="flex gap-x-2.5">
-      <span className="font-bold text-2xl">
+    <div className="flex items-center gap-x-1 md:gap-x-2.5">
+      <span className="font-bold text-md sm:text-2xl">
         {discount
           ? formatCurrency(applyDiscount(price, discount))
           : priceFormatted}

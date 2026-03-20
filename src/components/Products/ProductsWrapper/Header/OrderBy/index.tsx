@@ -21,7 +21,7 @@ export default function OrderBy() {
     <>
       <label className="mr-1" htmlFor="sortBy">
         Sort by:
-      </label>{' '}
+      </label>
       <div className="relative">
         <select
           name="sort_by"

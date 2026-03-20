@@ -10,7 +10,7 @@ export default function RatingProduct({ rating }: RatingProductProps) {
   return (
     <div className="flex items-center gap-x-3 my-2">
       <RatingStars rating={rating} />
-      <span className="text-sm">
+      <span className="text-xs sm:text-sm">
         {formatRating(rating)}/<span className="text-black/60">5</span>
       </span>
     </div>

@@ -26,13 +26,13 @@ export default function Category({
   }
 
   return (
-    <ul className="space-y-5.5">
+    <ul className="space-y-1">
       {categories.map(({ id, category }) => (
         <li key={id}>
           <Button
             focusRipple
             TouchRippleProps={{ className: 'text-black/10' }}
-            className="flex items-center justify-between w-full group hover:bg-black/10 focus-visible:bg-black/10"
+            className="flex items-center justify-between w-full group hover:bg-black/10 focus-visible:bg-black/10 text-base font-normal"
             onClick={() => changeCategory(category)}
             endIcon={
               <ChevronRight

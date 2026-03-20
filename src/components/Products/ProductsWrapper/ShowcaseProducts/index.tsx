@@ -19,7 +19,7 @@ export default function ShowcaseProducts({
     );
   }
   return (
-    <section className="grid grid-cols-3 gap-x-5 gap-y-9">
+    <section className="grid grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-9">
       {products.map((product) => (
         <ProductItem key={product.id} product={product} />
       ))}

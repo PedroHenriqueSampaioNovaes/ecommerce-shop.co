@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <footer className="mt-20 relative before:bg-back-300 before:absolute before:inset-0 before:top-22.5 before:-z-10">
       <div className="container pb-22.5">
-        <section className="bg-black py-9 px-16 flex justify-between items-center rounded-2.5xl overflow-hidden">
-          <h4 className="uppercase text-white text-4xl text-balance">
+        <section className="bg-black p-6 sm:py-9 sm:px-16 flex max-lg:flex-col gap-y-8 justify-between items-center rounded-2.5xl overflow-hidden">
+          <h4 className="uppercase text-white text-3xl md:text-4xl text-balance xs:max-lg:text-center">
             STAY UPTO DATE ABOUT OUR LATEST OFFERS
           </h4>
           <form className="flex flex-col gap-3.5">
@@ -28,36 +28,36 @@ export default function Footer() {
             />
             <Button
               type="button"
-              className="text-black bg-white rounded-7.75xl py-3 px-4 min-w-87.5 normal-case font-medium"
+              className="text-black bg-white rounded-7.75xl py-3 px-4 sm:min-w-87.5 normal-case font-medium"
             >
               Subscribe to Newsletter
             </Button>
           </form>
         </section>
 
-        <section className="flex justify-between mt-12.5">
-          <div className="max-w-62.5">
+        <section className="grid grid-cols-[repeat(2,auto)] sm:grid-cols-[repeat(5,auto)] sm:justify-between gap-y-6 gap-x-3 mt-12.5">
+          <div className="lg:max-w-62.5 max-lg:col-span-full">
             <Brand />
-            <p className="mt-6 mb-8.5 text-black/60 text-sm">
+            <p className="mt-6 mb-8.5 text-black/60 text-sm text-balance">
               We have clothes that suits your style and which you’re proud to
               wear. From women to men.
             </p>
             <div className="flex items-center gap-x-3">
-              <span className="rounded-full border border-black/20 p-2 cursor-pointer">
+              <span className="bg-white rounded-full border border-black/20 p-2 cursor-pointer">
                 <Twitter color="#000" size={16} />
               </span>
               <span className="bg-black rounded-full border border-black p-2 cursor-pointer">
                 <Facebook color="#fff" size={16} />
               </span>
-              <span className="rounded-full border border-black/20 p-2 cursor-pointer">
+              <span className="bg-white rounded-full border border-black/20 p-2 cursor-pointer">
                 <Instagram color="#000" size={16} />
               </span>
-              <span className="rounded-full border border-black/20 p-2 cursor-pointer">
+              <span className="bg-white rounded-full border border-black/20 p-2 cursor-pointer">
                 <Github color="#000" size={16} />
               </span>
             </div>
           </div>
-          <div className="max-w-62.5">
+          <div>
             <h5 className="font-body font-medium uppercase tracking-[.1875rem] mb-6.5">
               Company
             </h5>
@@ -84,7 +84,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="max-w-62.5">
+          <div>
             <h5 className="font-body font-medium uppercase tracking-[.1875rem] mb-6.5">
               Help
             </h5>
@@ -111,7 +111,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="max-w-62.5">
+          <div>
             <h5 className="font-body font-medium uppercase tracking-[.1875rem] mb-6.5">
               Faq
             </h5>
@@ -138,7 +138,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="max-w-62.5">
+          <div>
             <h5 className="font-body font-medium uppercase tracking-[.1875rem] mb-6.5">
               Resources
             </h5>
@@ -168,7 +168,7 @@ export default function Footer() {
         </section>
 
         <DividerUi margin="mt-12.5 mb-6" />
-        <div className="flex justify-between items-center">
+        <div className="flex max-md:flex-col justify-between items-center gap-4">
           <p className="text-black/60">
             Shop.co © 2000-2026, All rights reserved
           </p>
